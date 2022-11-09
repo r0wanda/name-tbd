@@ -1,0 +1,386 @@
+-rwxr-xr-x .. 4K-rwxr-xr-x .vscode 4K-rw-r--r-- ButtonWidget.hpp 872B-rw-r--r-- FileBrowser.hpp 2.76K-rw-r--r-- IWin.hpp 885B-rw-r--r-- LabelWidget.hpp 345B-rw-r--r-- Makefile 282B-rw-r--r-- MoveDialog.hpp 659B-rw-r--r-- Observer.cpp 216B-rw-r--r-- Observer.hpp 197B-rw-r--r-- OkDialog.hpp 151B-rw-r--r-- ScrollWin.hpp 2.14K-rw-r--r-- SelectionList.hpp 2.17K-rw-r--r-- Subject.cpp 639B-rw-r--r-- Subject.hpp 415B-rw-r--r-- ToDo.md 169B-rw-r--r-- UI.hpp 3.38K-rw-r--r-- Widget.hpp 1.28K-rw-r--r-- WidgetWin.hpp 1.69K-rw-r--r-- WidgetWinGenerators.hpp 39B-rw-r--r-- Win.hpp 2.89K-rw------- core 832K-rw-r--r-- dbg.hpp 1.03K-rw-r--r-- dbg2.h 1.03K-rw-r--r-- errfile 0B-rw-r--r-- fileio.cpp 2.65K-rw-r--r-- fileio.hpp 342B-rwxr-xr-x main 1.07M-rw-r--r-- main.cpp 356B-rwxr-xr-x test 172.09K-rw-r--r-- test.cpp 1.47K-rwxr-xr-x testfolder 4K-rw-r--r-- testt.cpp 379B-rw-r--r-- tui.cpp 1.25K-rw-r--r-- tui.hpp 350B-rw-r--r-- util.cpp 434B-rw-r--r-- util.hpp 228B
+-rwxr-xr-x .. 4K-rwxr-xr-x .vscode 4K-rw-r--r-- ButtonWidget.hpp 872B-rw-r--r-- FileBrowser.hpp 2.76K-rw-r--r-- IWin.hpp 885B-rw-r--r-- LabelWidget.hpp 345B-rw-r--r-- Makefile 282B-rw-r--r-- MoveDialog.hpp 659B-rw-r--r-- Observer.cpp 216B-rw-r--r-- Observer.hpp 197B-rw-r--r-- OkDialog.hpp 151B-rw-r--r-- ScrollWin.hpp 2.14K-rw-r--r-- SelectionList.hpp 2.17K-rw-r--r-- Subject.cpp 639B-rw-r--r-- Subject.hpp 415B-rw-r--r-- ToDo.md 169B-rw-r--r-- UI.hpp 3.38K-rw-r--r-- Widget.hpp 1.28K-rw-r--r-- WidgetWin.hpp 1.69K-rw-r--r-- WidgetWinGenerators.hpp 39B-rw-r--r-- Win.hpp 2.89K-rw------- core 832K-rw-r--r-- dbg.hpp 1.03K-rw-r--r-- dbg2.h 1.03K-rw-r--r-- errfile 956B-rw-r--r-- fileio.cpp 2.65K-rw-r--r-- fileio.hpp 342B-rwxr-xr-x main 1.07M-rw-r--r-- main.cpp 356B-rwxr-xr-x test 172.09K-rw-r--r-- test.cpp 1.47K-rwxr-xr-x testfolder 4K-rw-r--r-- testt.cpp 379B-rw-r--r-- tui.cpp 1.25K-rw-r--r-- tui.hpp 350B-rw-r--r-- util.cpp 434B-rw-r--r-- util.hpp 228B
+-rwxr-xr-x .. 4K-rw-r--r-- FileBrowser.hpp 2.43K-rw-r--r-- Makefile 287B-rwxr-xr-x anotherfolder 4K-rw-r--r-- test.txt 4B
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+UI handle_input calling process_input
+FileBrowser Processing input
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
+error
