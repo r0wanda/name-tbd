@@ -41,7 +41,6 @@ public:
             cerr << "Drawing widget" << endl;
             w->draw(window);
         }
-        wrefresh(window);
     }
 
     int get_active_widget() {

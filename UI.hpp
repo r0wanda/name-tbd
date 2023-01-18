@@ -24,6 +24,7 @@
 #include "WidgetWin.hpp"
 #include "LabelWidget.hpp"
 #include "ButtonWidget.hpp"
+#include "WinMan.hpp"
 
 using namespace std;
 namespace fs = filesystem;
@@ -38,13 +39,8 @@ public:
         current = left_win;
     }
     int run() {
-        WidgetWin welcome_dialog(3, 20, 0, 0, true);
-        ButtonWidget *welcome_button = new ButtonWidget(0, 0, "Welcome"); // TODO: Get widget window displaying and fix double free
+        WinMan winman;
         
-        welcome_dialog.add_widget(welcome_button);
-        welcome_button->add_observer(this, "pressed");
-        welcome_dialog.set_active_widget(0);
-
         vector<string> files = dirlist(dirinfo("."));
 
         initscr();
@@ -52,18 +48,32 @@ public:
         int screen_height = getmaxy(stdscr);
         int screen_width = getmaxx(stdscr);
         left_win = new FileBrowser(screen_height, screen_width / 2, 0, 0, false, ".");
+        winman.add_win(left_win);
         left_win->set_active(true);
         right_win = new FileBrowser(screen_height, screen_width / 2, 0, screen_width / 2, false, ".");
+        winman.add_win(right_win);
         //left_win->load_lines(files);
         //right_win->load_lines(files);
         right_win->set_working_directory("/home/rowan/code/name-tbd/testfolder");
-        current = left_win;
-        refresh();
-        left_win->update();
-        //welcome_dialog.update();
+        WidgetWin* welcome_dialog = new WidgetWin(3, 20, 0, 0, true);
+        winman.add_win(welcome_dialog);
+        ButtonWidget *welcome_button = new ButtonWidget(0, 0, "Welcome"); // TODO: Get widget window displaying and fix double free
+        
+        welcome_dialog->add_widget(welcome_button);
+        welcome_button->add_observer(this, "pressed");
+        welcome_dialog->set_active_widget(0);
+        welcome_dialog->set_z(1);
+
+        current = welcome_dialog;
+
+        welcome_dialog->update();
 
         nodelay(current->get_window(), false);
-        while (handle_input(getch()));
+        bool keep_running = true;
+        while (keep_running) {
+            winman.draw();
+            keep_running = handle_input(getch());
+        }
 
         endwin();
 

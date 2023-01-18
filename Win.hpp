@@ -12,6 +12,7 @@
 #include <curses.h>
 #include <unistd.h>
 #include "fileio.hpp"
+#include "Subject.hpp"
 
 using namespace std;
 
@@ -20,15 +21,18 @@ public:
     Win() {
         window = newwin(getmaxy(stdscr), getmaxx(stdscr), getbegy(stdscr), getbegx(stdscr));
         bordered = false;
+        z = 0;
         content_area = subwin(window, getmaxy(stdscr), getmaxx(stdscr), getbegy(stdscr), getbegx(stdscr));
     }
     Win(int nlines, int ncols, int begin_y, int begin_x, bool is_bordered) {
         window = newwin(nlines, ncols, begin_y, begin_x);
         content_area = nullptr;
+        z = 0;
         set_bordered(is_bordered);
     }
     Win(const Win &w) {
         window = dupwin(w.window);
+        z = w.z;
         set_bordered(w.bordered);
     }
     int get_y() {
@@ -101,7 +105,7 @@ public:
     }
     virtual void update() {
     }
-    void winrefresh() {
+    void draw_box() {
         if (bordered) box(window, ACS_VLINE, ACS_HLINE);
     }
     friend void swap(Win a, Win b) {

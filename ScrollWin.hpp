@@ -54,16 +54,14 @@ public:
             wmove(window, 0, 0);
         }*/
         wclear(window);
-        winrefresh();
+        draw_box();
         wmove(window, offset, offset);
         //cerr << display_start << " " << display_length << " " << lines.size() << endl;
         for (int i = display_start; i < display_start + display_length && i < lines.size(); i++) {
         //    cerr << "Display start: " << display_start << " Display length: " << display_length << "Content: " << lines[i] << endl;
             wprintw(window, lines[i].c_str());
-            wrefresh(window);
             wmove(window, get_cur_y() + 1, offset);
         }
-        wrefresh(window);
         //cerr << "Updating something" << endl;
     }
     // TODO: string get_line_content(int l)

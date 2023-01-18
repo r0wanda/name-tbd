@@ -42,7 +42,6 @@ public:
             wattron(window, A_STANDOUT);
             wprintw(window, "%s", lines[selected].c_str());
             wattroff(window, A_STANDOUT);
-            wrefresh(window);
         }
     }
     void load_lines(vector<string> l) {

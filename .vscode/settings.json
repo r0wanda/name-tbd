@@ -27,5 +27,12 @@
         "*.inc": "cpp",
         "unordered_map": "cpp",
         "random": "cpp"
-    }
+    },
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/rowan/code/name-tbd",
+            "binaryPath": "/home/rowan/code/name-tbd/main",
+            "binaryArgs": []
+        }
+    ]
 }
