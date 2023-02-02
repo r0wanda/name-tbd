@@ -45,6 +45,7 @@ public:
 
         initscr();
         noecho();
+        curs_set(0);
         int screen_height = getmaxy(stdscr);
         int screen_width = getmaxx(stdscr);
         left_win = new FileBrowser(screen_height, screen_width / 2, 0, 0, false, ".");
@@ -55,7 +56,7 @@ public:
         //left_win->load_lines(files);
         //right_win->load_lines(files);
         right_win->set_working_directory("/home/rowan/code/name-tbd/testfolder");
-        WidgetWin* welcome_dialog = new WidgetWin(3, 20, 0, 0, true);
+        welcome_dialog = new WidgetWin(3, 20, 0, 0, true);
         winman.add_win(welcome_dialog);
         ButtonWidget *welcome_button = new ButtonWidget(0, 0, "Welcome"); // TODO: Get widget window displaying and fix double free
         
@@ -83,11 +84,13 @@ public:
         if (event == "pressed") {
             cerr << "Button Pressed" << endl;
             current = left_win;
+            welcome_dialog->set_z(-1);
         }
     }
 private:
     FileBrowser *left_win;
     FileBrowser *right_win;
+    WidgetWin *welcome_dialog;
     IWin *current;
     bool handle_input(int c) {
         switch (c) {

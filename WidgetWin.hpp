@@ -36,7 +36,6 @@ public:
     }
 
     virtual void update() {
-        werase(window);
         for (Widget *w : widgets) {
             cerr << "Drawing widget" << endl;
             w->draw(window);
