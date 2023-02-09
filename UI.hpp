@@ -40,7 +40,7 @@ public:
     }
     int run() {
         WinMan winman;
-        
+
         vector<string> files = dirlist(dirinfo("."));
 
         initscr();
@@ -53,13 +53,11 @@ public:
         left_win->set_active(true);
         right_win = new FileBrowser(screen_height, screen_width / 2, 0, screen_width / 2, false, ".");
         winman.add_win(right_win);
-        //left_win->load_lines(files);
-        //right_win->load_lines(files);
         right_win->set_working_directory("/home/rowan/code/name-tbd/testfolder");
         welcome_dialog = new WidgetWin(3, 20, 0, 0, true);
         winman.add_win(welcome_dialog);
-        ButtonWidget *welcome_button = new ButtonWidget(0, 0, "Welcome"); // TODO: Get widget window displaying and fix double free
-        
+        ButtonWidget *welcome_button = new ButtonWidget(0, 0, "Welcome");
+
         welcome_dialog->add_widget(welcome_button);
         welcome_button->add_observer(this, "pressed");
         welcome_dialog->set_active_widget(0);
@@ -84,7 +82,7 @@ public:
         if (event == "pressed") {
             cerr << "Button Pressed" << endl;
             current = left_win;
-            welcome_dialog->set_z(-1);
+            welcome_dialog->set_z(1);
         }
     }
 private:

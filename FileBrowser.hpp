@@ -79,10 +79,10 @@ public:
     virtual void process_input(int c) {
         cerr << "FileBrowser Processing input" << endl;
         switch (c) {
-        case 'k':
+        case 'j':
             move_lines(1);
             break;
-        case 'j':
+        case 'k':
             move_lines(-1);
             break;
         case 'l':
